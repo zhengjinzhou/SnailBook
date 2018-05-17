@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zhou.com.snailbook.ui.activity.SubRankActivity">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <zhou.com.snailbook.view.RVPIndicator
+        android:id="@+id/indicatorSubRank"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:indicator_color="@color/common_bg"
+        app:indicator_style="triangle"
+        app:item_count="3"
+        app:text_color_normal="@color/light_gray"
+        app:text_color_hightlight="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/viewpagerSubRank"
+        android:layout_weight="1"
+        />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llPdfRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <zhou.com.snailbook.view.epubview.DirectionalViewpager
+        android:id="@+id/epubViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:direction="vertical" />
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:clickable="true"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ab_back"
+        app:title=" ">
+
+        <ImageView
+            android:id="@+id/toolbar_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu_toc" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="xxx"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+</FrameLayout>

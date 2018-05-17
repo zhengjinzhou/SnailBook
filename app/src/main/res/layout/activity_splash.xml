@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="zhou.com.snailbook.ui.activity.SplashActivity">
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/touch_bg"
+        android:padding="5dp"
+        android:text="跳过" />
+
+    <me.wangyuwei.particleview.ParticleView
+        android:id="@+id/pv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pv_background_color="?attr/colorPrimary"
+        app:pv_host_text="蜗牛看书"
+        app:pv_host_text_anim_time="400"
+        app:pv_particle_text="免费电子书"
+        app:pv_particle_text_size="16sp"
+        app:pv_spread_anim_time="200"
+        app:pv_text_anim_time="600"
+        app:pv_text_color="#FFF"
+        />
+
+</RelativeLayout>
